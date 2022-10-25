@@ -67,7 +67,7 @@ nav > a:not(:first-of-type){
 }
 
 nav > a.logo {
-  margin-right: auto;
+  margin-right: 0;
   text-transform: uppercase;
 }
 
@@ -131,3 +131,28 @@ footer {
   padding: 24px 0;
   color: var(--off-white);
 }
+
+@media screen and (max-width: 500px) {
+   nav, a.logo {
+    flex-direction: column;
+    text-align: center;
+   }
+   main article {
+    padding: 0;
+   }
+   main > .hero > .call-to-action {
+    font-size: 5vw;
+   }
+   main > article img {
+    display: block;
+    margin: 0 auto;
+    float: none;
+   }
+  
+   main > section, main > article {
+    margin-bottom: 0px;
+   }
+   article > h1, article > p {
+    margin: 0px;
+   }
+  }
